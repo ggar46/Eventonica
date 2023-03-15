@@ -50,7 +50,7 @@ function Events() {
         const deleteCard = await fetch(`http://localhost:8085/api/events/${id}`, {
           method: "DELETE"
         });
-        setEvents(events.filter(events => events.id !== id))
+        setEvents(events.filter(event => event.id !== id))
     } catch(err)  {
       console.error(err.message);
     }
@@ -62,7 +62,7 @@ function Events() {
     <div>
     <CardGroup className="Events">
             {events.map(event =>
-            <EventCard key={event.id} title={event.title} location={event.location} time={event.eventtime}/>
+            <EventCard key={event.id} title={event.title} location={event.location} time={event.eventtime} id={event.id} deleteRequest={deleteRequest}/>
             )}
     </CardGroup>
     <AddEventForm postRequest={postRequest} />
