@@ -1,6 +1,7 @@
 import Card from 'react-bootstrap/Card';
 import Moment from "react-moment";
 
+
 const EventCard = (props) =>{
 
     return(
@@ -11,6 +12,7 @@ const EventCard = (props) =>{
       <Card.Text>
         {props.location}
       </Card.Text>
+      <button>delete</button>
     </Card.Body>
   </Card>
   )}

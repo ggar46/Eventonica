@@ -4,6 +4,7 @@ import CardGroup from 'react-bootstrap/CardGroup';
 import AddEventForm from "./addeventform";
 
 
+
 function Events() {
     const [events, setEvents] = useState([]);
 
@@ -42,6 +43,22 @@ function Events() {
         setEvents((events) => [...events, data])
       })
     }
+
+    // const deleteRequest = (whichEvent) =>{
+    //   return fetch("http://localhost:8085/api/events", {
+    //     method: "DELETE",
+    //     headers: { "Content-Type": "application/json" },
+    //     body: JSON.stringify(whichEvent),
+    //   })
+    //   .then((response) => {
+    //     return response.json();
+    //   })
+    //   .then((data) => {
+    //     //console.log("From the front", data);
+    //     setEvents((events) => [...events, data])
+    //   })
+    // }
+    // }
 
   return (
     <div>
