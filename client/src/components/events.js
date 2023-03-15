@@ -44,21 +44,19 @@ function Events() {
       })
     }
 
-    // const deleteRequest = (whichEvent) =>{
-    //   return fetch("http://localhost:8085/api/events", {
-    //     method: "DELETE",
-    //     headers: { "Content-Type": "application/json" },
-    //     body: JSON.stringify(whichEvent),
-    //   })
-    //   .then((response) => {
-    //     return response.json();
-    //   })
-    //   .then((data) => {
-    //     //console.log("From the front", data);
-    //     setEvents((events) => [...events, data])
-    //   })
-    // }
-    // }
+    //testing delete request******************************************************************
+    const deleteRequest = async id =>{
+      try {
+        const deleteCard = await fetch(`http://localhost:8085/api/events/${id}`, {
+          method: "DELETE"
+        });
+        setEvents(events.filter(events => events.id !== id))
+    } catch(err)  {
+      console.error(err.message);
+    }
+    }
+
+    //*************************************************************************
 
   return (
     <div>
