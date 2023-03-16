@@ -72,7 +72,7 @@ app.post("/api/events", async (req, res) => {
 })
 
 
-
+//$ is oart of the syntax, takes actual value of the id
 app.delete("/api/events/:id", async(req,res) => {
     try{
         const  {id}  = req.params;
@@ -80,6 +80,7 @@ app.delete("/api/events/:id", async(req,res) => {
            id 
         ]);
         res.json("Event was deleted")
+        console.log("delete button is reaching backend")
     } catch(err)  {
         console.log(err.message);
     }

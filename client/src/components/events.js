@@ -7,7 +7,7 @@ import AddEventForm from "./addeventform";
 
 function Events() {
     const [events, setEvents] = useState([]);
-
+   
     // useEffect(() => {
     //     fetch("http://localhost:8085/api/events")
     //       .then((response) => response.json())
@@ -44,19 +44,22 @@ function Events() {
       })
     }
 
-    //testing delete request******************************************************************
-    const deleteRequest = async id =>{
-      try {
-        const deleteCard = await fetch(`http://localhost:8085/api/events/${id}`, {
-          method: "DELETE"
-        });
-        setEvents(events.filter(event => event.id !== id))
-    } catch(err)  {
-      console.error(err.message);
-    }
-    }
 
-    //*************************************************************************
+
+//testing delete request
+//parent knows the id of each card,  events  is all the events because of how we  called get request
+const deleteRequest = async (id) =>{
+  try {
+    const deleteRequest = await fetch(`http://localhost:8085/api/events/${id}`, {
+        method: "DELETE"
+    });
+
+    setEvents(events.filter(events => events.id !== id))
+
+  } catch(err)  {
+    console.error(err.message);
+  }
+}
 
   return (
     <div>
@@ -64,6 +67,7 @@ function Events() {
             {events.map(event =>
             <EventCard key={event.id} title={event.title} location={event.location} time={event.eventtime} id={event.id} deleteRequest={deleteRequest}/>
             )}
+           
     </CardGroup>
     <AddEventForm postRequest={postRequest} />
     </div>
