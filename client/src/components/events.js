@@ -80,12 +80,13 @@ const deleteRequest = async (id) =>{
 //make sure in html know how to display (button, heart) - get request is updating state of all events
 //no need to store anything else if it is set up to rerender because current state will show based on database, which is grabbed by get request
 const handleFaveId = async (id, isFavorited) =>{
+  console.log(id);
   try {
     //add method, headers
-    const editFave = await fetch(`http://localhost:8085/api/events?id=${id}`, {
+    const editFave = await fetch(`http://localhost:8085/api/events/${id}`, {
       method: "PUT",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(newEvent),
+      //body: JSON.stringify(newEvent),
     })
     //setEvents("favorited");
     console.log("favorites button IS WORKING");
