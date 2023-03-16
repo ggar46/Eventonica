@@ -12,7 +12,10 @@ const EventCard = (props) =>{
       <Card.Text>
         {props.location}
       </Card.Text>
-      <button onClick={() => props.deleteRequest(props.id)}>Delete</button>
+      <p>Event Id: {props.id}</p>
+      <button onClick={() => props.deleteRequest(props.id)}>Delete</button> 
+      <span><button onClick={() => props.handleFaveId(props.favoritesId)}>Favorite</button></span>
+       
     </Card.Body>
   </Card>
   )}

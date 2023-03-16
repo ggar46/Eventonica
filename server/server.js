@@ -72,7 +72,7 @@ app.post("/api/events", async (req, res) => {
 })
 
 
-//$ is oart of the syntax, takes actual value of the id
+//$ is part of the syntax, takes actual value of the id
 app.delete("/api/events/:id", async(req,res) => {
     try{
         const  {id}  = req.params;
@@ -86,6 +86,20 @@ app.delete("/api/events/:id", async(req,res) => {
     }
 })
 
+
+//PUT REQUEST, in query we would have UPDATE command, in URL add /favorite/:id
+//if we want to update multiple fields, we would have a form thing with a data structure (json, with name/date/etc) to hold all info
+//here we are specifying needed fields in URL, in front-end we pass value with ? and id=...
+app.put("/api/events/favorites/:id/:isFavorited"), async(req,res) => {
+    try{
+        const  {id,isFavorited}  = req.params;
+        const {description} = req.body;
+        const updateFavorites = await db.query("UPDATE events SET favorites= $1 WHERE id= $2",  [isFavorited,id]);
+        res.json("Event was updated");
+    } catch (err) {
+        console.errror(err.message)
+    }
+}
 
 
 app.listen(PORT, () => console.log(`Hola! Server running on Port http://localhost:${PORT}`));
