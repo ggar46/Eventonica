@@ -81,7 +81,12 @@ const deleteRequest = async (id) =>{
 //no need to store anything else if it is set up to rerender because current state will show based on database, which is grabbed by get request
 const handleFaveId = async (id, isFavorited) =>{
   try {
-    const editFave = await fetch(`/api/events/favorites?id=${id}&isFavorited=${isFavorited}`)
+    //add method, headers
+    const editFave = await fetch(`http://localhost:8085/api/events?id=${id}`, {
+      method: "PUT",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(newEvent),
+    })
     //setEvents("favorited");
     console.log("favorites button IS WORKING");
   } catch(err) {
@@ -89,6 +94,10 @@ const handleFaveId = async (id, isFavorited) =>{
   }
   //Pass in ID of what you want to edit, we build API on backend, url linked to favorites
 }
+/*
+-  
+*/
+
 
 
   return (
