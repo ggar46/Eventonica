@@ -35,7 +35,7 @@ const AddEventForm = (props) => {
     }
 
     return (
-        <form onSubmit={handleSubmit}>
+        <form id="form" onSubmit={handleSubmit}>
             <label>Title</label>
             <input
                 type="text"

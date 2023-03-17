@@ -3,6 +3,7 @@ import Moment from "react-moment";
 import { useEffect, useState } from 'react';
 
 
+
 const EventCard = (props) =>{
   const [isFavorited, setIsFavorited] = useState(props.isFavorite); 
 
@@ -13,7 +14,7 @@ useEffect(() => {props.onFaveId(props.id, isFavorited)}, [isFavorited])
     console.log("favoritesId is", props.favoritesId);
 
     return(
-    <Card style={ {width:'18rem' }}>
+    <Card id="eachCard" style={ {width:'18rem' }}>
     <Card.Body>
       <Card.Title>{props.title}</Card.Title>
       <Card.Subtitle className="mb-2 text-muted">Date: {!props.time ? "TBD" : <Moment format={"DD/MM/YYYY"}>{props.time}</Moment>}</Card.Subtitle>

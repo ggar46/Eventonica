@@ -3,10 +3,6 @@
     color: rgb(255, 255, 255);
     margin-left: auto;
     margin-right: auto;
+    display: block;
 }
 
-form {
-    margin-left: auto;
-  margin-right: auto;
-  width: 8em
-}
