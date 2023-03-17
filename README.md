@@ -33,10 +33,8 @@ Back in the terminal window with the project go inside the server directory and 
 Your DB should look like this inside the psql terminal
 ![Your DB should look like this](https://raw.githubusercontent.com/Yosolita1978/screenshoots/696689a627eb5ca206b5a2eaebec7cc1efa15ffc/2023/H1/Screen%20Shot%202023-03-09%20at%208.25.54%20PM.png)
 
-# Links that you will need
+# Acknowledgments
 
-* The instructions for [pg](https://node-postgres.com/apis/pool)  
-* Setup [postgres correctly](https://github.com/Techtonica/curriculum/blob/main/databases/installing-postgresql.md).
-
-
+* Icons library [fontAwesomeLibrary](https://fontawesomeicons.com/heart)
+* Base template by Yosolita1978 [Link to Github](https://github.com/Yosolita1978/2023EventonicaTemplate)
 
