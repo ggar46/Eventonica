@@ -1,3 +1,6 @@
+### About the Project
+
+
 ### Built With
 * React
 * Bootstrap
@@ -11,7 +14,7 @@
 This project does not rely on any external dependencies or services.
 1. Clone the repo ```git clone https://github.com/ggar46/Eventonica/tree/eventonicabranch <NAMENEWDIRECTORY>```
 2. Install NPM packages ```npm install```
-3. Add the database
+3. Add the database using PostGreSQL.
     * Inside your server directory create a `.env` file and copy there the values that are in `.envexample`
     * Open a terminal window, and go to the psql terminal with the comand `psql`
     * Inside the psql prompt create your database eventonica with the command `create database eventonica;` (don't forget the semicolon!
