@@ -21,12 +21,13 @@ useEffect(() => {props.onFaveId(props.id, isFavorited)}, [isFavorited])
         {props.location}
       </Card.Text>
       <p>Event Id: {props.id}</p>
-
-      <p>This event is {isFavorited? " ": "not "} my favourite</p>
-      {/* <img src=""></img> */}
+      
+      <span>{isFavorited? <p>HEART</p> : <p>No heart</p>}</span>
 
       <button onClick={() => props.deleteRequest(props.id)}>Delete</button> 
       <span><button onClick={() => setIsFavorited(!isFavorited)}>Favorite</button></span>
+      <span>{isFavorited? <i class='fa fa-heart red-color'></i> : <i class='fa fa-heart'></i>}</span>
+
     </Card.Body>
   </Card>
   )}
