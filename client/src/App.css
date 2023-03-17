@@ -1,22 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
 
+
 .App {
   display: grid;
   align-items: center;
   justify-content: center;
   background-color: #55423d;
   font-family: 'Bitter';
-  
 }
 
 .Events {
   box-shadow: 1px, gray;
+
 }
 
-h1 {
+#h1 {
   color: #fffffe;
   margin-bottom: 50px !important;
-  font-family:'Satisfy', cursive;;
+  font-family:'Satisfy', cursive;
+  font-weight:bold;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  
 }
 
 .red-color {
