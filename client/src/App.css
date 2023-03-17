@@ -1,14 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
 
 
-.App {
+/* .App {
   display: grid;
   align-items: center;
   justify-content: center;
+  position: absolute;
+} */
+
+.App {
+  display: flex;
+  flex-direction: column;
   background-color: #55423d;
-  font-family: 'Bitter';
-  height: 500px;
+  min-height:100vh;
   padding: 60px;
+  font-family: 'Bitter';
 }
 
 .Events {
@@ -34,7 +40,8 @@ button {
   color: #271c19;
 }
 
-#formspan{
-  margin-left: auto;
-  margin-right: auto;
+#extraspace{
+  height: 50px;
+  background-color: #b84c2e;
+  width:fit-content
 }
