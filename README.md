@@ -1,10 +1,11 @@
-## Getting Started
 
 
-### Prerequisites
+### Getting Started
+
+#### Prerequisites
 * npm
 
-### Installation
+#### Installation
 This project does not rely on any external dependencies or services.
 1. Clone the repo ```git clone https://github.com/ggar46/Eventonica/tree/eventonicabranch <NAMENEWDIRECTORY>```
 2. Install NPM packages ```npm install```
