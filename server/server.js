@@ -92,12 +92,13 @@ app.delete("/api/events/:id", async(req,res) => {
 
 app.put("/api/events/:id", async(req,res) => {
     try{
+        console.log("PUT Request is working");
         const  {id}  = req.params;
-        const {favorites} = req.body;
-        console.log("Id", id);
-        console.log("favorites", favorites);
-        console.log(req.body);
-        const updateFavorites = await db.query("UPDATE events SET favorites= $1 WHERE id= $2",  [favorites,id]);
+        const {favorite} = req.body;
+        // console.log("Id", id);
+        // console.log("favorites", favorite);
+        // console.log(req.body);
+        const updateFavorites = await db.query("UPDATE events SET favorites= $1 WHERE id= $2",  [favorite,id]);
         res.json("Event was updated");
     } catch (err) {
         console.error(err.message)
