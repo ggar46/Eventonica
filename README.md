@@ -1,21 +1,21 @@
-## About the Project
+# About the Project
 ---
 This application is an event page that allows users to add, remove, or favorite event cards. The event data from the application is fetched from a PostGreSQL database.
 
 
-### Built With
+## Built With
 ---
 * React
 * Bootstrap
 
-### Getting Started
+## Getting Started
 ---
 
 
-#### Prerequisites
+### Prerequisites
 * npm
 
-#### Installation
+### Installation
 This project does not rely on any external dependencies or services.
 1. Clone the repo ```git clone https://github.com/ggar46/Eventonica/tree/eventonicabranch <NAMENEWDIRECTORY>```
 2. Install NPM packages ```npm install```
@@ -26,7 +26,7 @@ This project does not rely on any external dependencies or services.
     * Go inside the server directory of your project, and run the command `psql -d eventonica -f db.sql` that will create a table `events` with 5 rows inside your db eventonica. 
 
 
-### Usage
+## Usage
 ---
 Features
 * Delete events by pressing the labelled delete buttons.
@@ -34,7 +34,7 @@ Features
 * Toggle favorited and unfavorited events by clicking the favorite button. The black heart will turn red when the event has been favorited.
 
 
-### Contributing
+## Contributing
 ---
 If you have a suggestion that would make this better, please fork the repo and create a pull request:
     1. Fork the Project
@@ -44,18 +44,18 @@ If you have a suggestion that would make this better, please fork the repo and c
     5. Open a Pull Request
 
 
-### License
+## License
 ---
 Licensed by blank
 
 
-### Contact
+## Contact
 ---
 Gisselle Garcia - email@example.com
 Project Link - https://github.com/ggar46/Eventonica
 
 
-### Acknowledgments
+## Acknowledgments
 ---
 * Icons library [fontAwesomeLibrary](https://fontawesomeicons.com/heart)
 * Base template by Yosolita1978 [Link to Github](https://github.com/Yosolita1978/2023EventonicaTemplate)
