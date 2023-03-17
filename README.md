@@ -34,6 +34,10 @@ Your DB should look like this inside the psql terminal
 ![Your DB should look like this](https://raw.githubusercontent.com/Yosolita1978/screenshoots/696689a627eb5ca206b5a2eaebec7cc1efa15ffc/2023/H1/Screen%20Shot%202023-03-09%20at%208.25.54%20PM.png)
 
 
+# Usage
+
+
+
 # Contributing
 If you have a suggestion that would make this better, please fork the repo and create a pull request:
     1. Fork the Project
