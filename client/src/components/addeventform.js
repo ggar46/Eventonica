@@ -1,4 +1,5 @@
 import { useState } from "react";
+import './eventForm.css';
 
 const AddEventForm = (props) => {
 

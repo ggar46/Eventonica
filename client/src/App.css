@@ -6,7 +6,9 @@
 }
 
 .Events {
-  box-shadow: 1px, rgb(218, 112, 112);
+  box-shadow: 1px, #ffc0ad;
+  background-color: #e78fb3;
+
 }
 
 h1 {
