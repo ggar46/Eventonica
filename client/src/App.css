@@ -1,8 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+
 .App {
   display: grid;
   align-items: center;
   justify-content: center;
   background-color: #55423d;
+  font-family: 'Bitter';
+  
 }
 
 .Events {
@@ -12,6 +16,7 @@
 h1 {
   color: #fffffe;
   margin-bottom: 50px !important;
+  font-family:'Satisfy', cursive;;
 }
 
 .red-color {
