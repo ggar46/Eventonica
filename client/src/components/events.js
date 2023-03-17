@@ -104,6 +104,7 @@ const handleFaveId = async (id, isFavorite) =>{
 
   return (
     <div>
+      <AddEventForm postRequest={postRequest} />
     <CardGroup className="Events">
             {events.map((event) =>(
             <EventCard 
@@ -120,7 +121,7 @@ const handleFaveId = async (id, isFavorite) =>{
             ))}
            
     </CardGroup>
-    <AddEventForm postRequest={postRequest} />
+    
     </div>
   );
 }
