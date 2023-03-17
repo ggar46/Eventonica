@@ -35,8 +35,6 @@ Your DB should look like this inside the psql terminal
 
 
 # Usage
-Please refer to this [link](https://excalidraw.com/)
-
 Features
 * Delete events by pressing the labelled delete buttons.
 * Add events by filling out the event title and location, and select the date.
