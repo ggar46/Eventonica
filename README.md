@@ -1,5 +1,6 @@
 ### Built With
-
+* React
+* Bootstrap
 
 ### Getting Started
 
