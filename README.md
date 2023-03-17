@@ -34,6 +34,11 @@ Your DB should look like this inside the psql terminal
 ![Your DB should look like this](https://raw.githubusercontent.com/Yosolita1978/screenshoots/696689a627eb5ca206b5a2eaebec7cc1efa15ffc/2023/H1/Screen%20Shot%202023-03-09%20at%208.25.54%20PM.png)
 
 
+# Installation
+This project does not rely on any external dependencies or services.
+1. Clone the repo `git clone https://github.com/ggar46/Eventonica/tree/eventonicabranch <NAMENEWDIRECTORY>`
+
+
 # Usage
 Features
 * Delete events by pressing the labelled delete buttons.
