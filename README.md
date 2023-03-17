@@ -1,5 +1,5 @@
-### About the Project
-****
+## About the Project
+---
 This application is an event page that allows users to add, remove, or favorite event cards. The event data from the application is fetched from a PostGreSQL database.
 
 
