@@ -6,12 +6,11 @@ function App() {
 
     <div className="App">
       <div id="h1" >
-      <h1>Techtonica 2023 events</h1>
+      <h1>Techtonica Events 2023</h1>
       </div>
-     
-    <Events />
-    <br></br>
-    
+      <br></br>
+      <Events />
+      <br></br>
     </div>
   );
 }

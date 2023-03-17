@@ -16,7 +16,7 @@ describe("Add Event Cards", () => {
   });
 });
 
-test("renders Techtonica 2023 events title", () => {
+test("renders Techtonica Events 2023 title", () => {
   render(<App />);
-  expect(screen.getByText(/Techtonica 2023 events/));
+  expect(screen.getByText(/Techtonica Events 2023/));
 });

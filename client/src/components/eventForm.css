@@ -14,10 +14,10 @@
   }
 
   ::placeholder { 
-    color: #b8c1ec;
+    color: #eea9b3;
     opacity: 1; 
     font-family:Georgia, 'Times New Roman', Times, serif;
-    font-size: smaller;
+    font-size: medium;
   }
 
   #eventbutton{

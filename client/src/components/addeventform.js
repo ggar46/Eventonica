@@ -42,7 +42,7 @@ const AddEventForm = (props) => {
             <input
                 type="text"
                 id="add-event-title"
-                placeholder="The Title of your Event"
+                placeholder="Event Title"
                 required
                 value={event.title} //state
                 onChange={handleTitleChange}
@@ -51,7 +51,7 @@ const AddEventForm = (props) => {
             <input
                 type="text"
                 id="add-event-location"
-                placeholder="The Location of your Event"
+                placeholder="Event Location"
                 required
                 value={event.location} //state
                 onChange={handleLocationChange}

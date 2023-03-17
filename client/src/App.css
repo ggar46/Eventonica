@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Handlee&display=swap');
 
 .App {
   display: flex;
@@ -7,7 +7,7 @@
   background-color: #232946;
   min-height:100vh;
   padding: 60px;
-  font-family: 'Bitter';
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 /* .Events {
@@ -16,13 +16,15 @@
 
 #h1 {
   color: #fffffe;
-  font-family:'Satisfy', cursive;
-  font-weight:bold;
   margin-left: auto;
   margin-right: auto;
   margin-top: 20px;
   margin-bottom: 30px;
-  
+  font-weight: bolder;
+  text-shadow: 1px 1px #eebbc3;
+  font-family:'Satisfy', cursive;
+  font-weight:bold;
+  font-size: xx-large;
 }
 
 .red-color {
@@ -47,5 +49,11 @@ moment {
 }
 
 .card-title {
-  font-size: large;
+  font-size: 18px;
+  color:#232946;
+  padding: 1px;
+  background-color: #eebbc3;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
 }
