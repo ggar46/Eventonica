@@ -4,10 +4,12 @@ This application is an event page that allows users to add, remove, or favorite 
 
 
 ### Built With
+---
 * React
 * Bootstrap
 
 ### Getting Started
+---
 
 
 #### Prerequisites
@@ -25,6 +27,7 @@ This project does not rely on any external dependencies or services.
 
 
 ### Usage
+---
 Features
 * Delete events by pressing the labelled delete buttons.
 * Add events by filling out the event title and location, and select the date.
@@ -32,6 +35,7 @@ Features
 
 
 ### Contributing
+---
 If you have a suggestion that would make this better, please fork the repo and create a pull request:
     1. Fork the Project
     2. Create your Feature Branch (git checkout -b feature/AmazingFeature)
@@ -41,16 +45,18 @@ If you have a suggestion that would make this better, please fork the repo and c
 
 
 ### License
-Licensed by Gisselle
+---
+Licensed by blank
 
 
 ### Contact
+---
 Gisselle Garcia - email@example.com
 Project Link - https://github.com/ggar46/Eventonica
 
 
 ### Acknowledgments
-
+---
 * Icons library [fontAwesomeLibrary](https://fontawesomeicons.com/heart)
 * Base template by Yosolita1978 [Link to Github](https://github.com/Yosolita1978/2023EventonicaTemplate)
 
