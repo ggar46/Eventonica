@@ -20,10 +20,10 @@ This project does not rely on any external dependencies or services.
 1. Clone the repo ```git clone https://github.com/ggar46/Eventonica/tree/eventonicabranch <NAMENEWDIRECTORY>```
 2. Install NPM packages ```npm install```
 3. Add the database using PostGreSQL.
-    i. Inside your server directory create a `.env` file and copy there the values that are in `.envexample`
-    ii. Open a terminal window, and go to the psql terminal with the comand `psql`
-    iii. Inside the psql prompt create your database eventonica with the command `create database eventonica;` (don't forget the semicolon!
-    iv. Go inside the server directory of your project, and run the command `psql -d eventonica -f db.sql` that will create a table `events` with 5 rows inside your db eventonica. 
+    1. Inside your server directory create a `.env` file and copy there the values that are in `.envexample`
+    2. Open a terminal window, and go to the psql terminal with the comand `psql`
+    3. Inside the psql prompt create your database eventonica with the command `create database eventonica;` (don't forget the semicolon!
+    4. Go inside the server directory of your project, and run the command `psql -d eventonica -f db.sql` that will create a table `events` with 5 rows inside your db eventonica. 
 
 
 ## Usage
