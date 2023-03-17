@@ -38,7 +38,7 @@ const AddEventForm = (props) => {
     return (
         <form id="form" onSubmit={handleSubmit}>
             <span id="formspan">
-            <label>Title</label>
+            <label>&nbsp;&nbsp;Title:&nbsp;&nbsp;</label>
             <input
                 type="text"
                 id="add-event-title"
@@ -46,8 +46,8 @@ const AddEventForm = (props) => {
                 required
                 value={event.title} //state
                 onChange={handleTitleChange}
-            />
-            <label>Place</label>
+            />&nbsp;
+            <label>&nbsp;&nbsp;Place:&nbsp;&nbsp;</label>
             <input
                 type="text"
                 id="add-event-location"
@@ -56,14 +56,14 @@ const AddEventForm = (props) => {
                 value={event.location} //state
                 onChange={handleLocationChange}
             />
-            <label>Date</label>
+            <label>&nbsp;&nbsp;Date:&nbsp;&nbsp;</label>
             <input
                 type="date"
                 id="add-event-date"
                 value={event.eventtime} //state
                 onChange={handleDateChange}
             />
-            <button type="submit" >Add Event</button>
+            <button id="eventbutton" type="submit" >Add Event</button>
             </span>
         </form>
     )

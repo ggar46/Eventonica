@@ -1,25 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
 
 
-/* .App {
-  display: grid;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-} */
-
 .App {
   display: flex;
   flex-direction: column;
-  background-color: #55423d;
+  background-color: #232946;
   min-height:100vh;
   padding: 60px;
   font-family: 'Bitter';
 }
 
-.Events {
-  box-shadow: 1px, gray;
-}
+/* .Events {
+  box-shadow: 25px, rgb(189, 233, 119);
+} */
 
 #h1 {
   color: #fffffe;
@@ -28,6 +21,7 @@
   margin-left: auto;
   margin-right: auto;
   margin-top: 20px;
+  margin-bottom: 30px;
   
 }
 
@@ -35,13 +29,23 @@
   color: red;
 }
 
-button {
-  background-color: #ffc0ad;
-  color: #271c19;
+
+#heartbutton{
+  background-color:#eebbc3;
+  color: #232946;
+  border-radius: 8px;
 }
 
-#extraspace{
-  height: 50px;
-  background-color: #b84c2e;
-  width:fit-content
+#deletebutton{
+  background-color: #232946;
+  color: #fffffe;
+  border-radius: 8px;
+}
+
+moment {
+  color:#b84c2e;
+}
+
+.card-title {
+  font-size: large;
 }

@@ -79,7 +79,7 @@ app.delete("/api/events/:id", async(req,res) => {
            id 
         ]);
         res.json("Event was deleted")
-        console.log("delete button is reaching backend")
+        //console.log("delete button is reaching backend")
     } catch(err)  {
         console.error(err.message);
     }
@@ -92,7 +92,7 @@ app.delete("/api/events/:id", async(req,res) => {
 
 app.put("/api/events/:id", async(req,res) => {
     try{
-        console.log("PUT Request is working");
+        //console.log("PUT Request is working");
         const  {id}  = req.params;
         const {favorite} = req.body;
         // console.log("Id", id);
