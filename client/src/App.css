@@ -33,3 +33,8 @@ button {
   background-color: #ffc0ad;
   color: #271c19;
 }
+
+#formspan{
+  margin-left: auto;
+  margin-right: auto;
+}

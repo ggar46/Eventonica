@@ -21,7 +21,6 @@ useEffect(() => {props.onFaveId(props.id, isFavorited)}, [isFavorited])
       <Card.Text>
         {props.location}
       </Card.Text>
-      <p>Event Id: {props.id}</p>
       
       <span>{isFavorited? <p>HEART</p> : <p>No heart</p>}</span>
 

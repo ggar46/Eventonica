@@ -1,5 +1,6 @@
 import { useState } from "react";
 import './eventForm.css';
+import './App.css';
 
 const AddEventForm = (props) => {
 
@@ -36,6 +37,7 @@ const AddEventForm = (props) => {
 
     return (
         <form id="form" onSubmit={handleSubmit}>
+            <span id="formspan">
             <label>Title</label>
             <input
                 type="text"
@@ -62,6 +64,7 @@ const AddEventForm = (props) => {
                 onChange={handleDateChange}
             />
             <button type="submit" >Add Event</button>
+            </span>
         </form>
     )
 
