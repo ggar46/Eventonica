@@ -2,7 +2,7 @@
   display: grid;
   align-items: center;
   justify-content: center;
-  margin-top: 50px;
+  background-color: #55423d;
 }
 
 .Events {
@@ -10,10 +10,15 @@
 }
 
 h1 {
-  color: #00556e;
+  color: #fffffe;
   margin-bottom: 50px !important;
 }
 
 .red-color {
   color: red;
+}
+
+button {
+  background-color: #ffc0ad;
+  color: #271c19;
 }
