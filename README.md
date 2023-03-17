@@ -40,9 +40,9 @@ Your DB should look like this inside the psql terminal
 This project does not rely on any external dependencies or services.
 1. Clone the repo ```git clone https://github.com/ggar46/Eventonica/tree/eventonicabranch <NAMENEWDIRECTORY>```
 2. Install NPM packages ```npm install```
-3. Add the correct database
+3. Add the database
     * Open a terminal window, and go to the psql terminal with the comand `psql`
-    * Inside the psql prompt create your database eventonica with the command `create database eventonica;` (don't forget the semicolon!)
+    * Inside the psql prompt create your database eventonica with the command `create database eventonica;` (don't forget the semicolon!
 
 
 # Usage
