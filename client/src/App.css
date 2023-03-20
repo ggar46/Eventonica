@@ -1,15 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Handlee&display=swap');
+
 .App {
-  display: grid;
-  align-items: center;
+  display: flex;
+  flex-direction: column;
+  background-color: #232946;
+  min-height:100vh;
+  padding: 60px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* .Events {
+  box-shadow: 25px, rgb(189, 233, 119);
+} */
+
+#h1 {
+  color: #fffffe;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  font-weight: bolder;
+  text-shadow: 1px 1px #eebbc3;
+  font-family:'Satisfy', cursive;
+  font-weight:bold;
+  font-size: xx-large;
+}
+
+.red-color {
+  color: red;
+}
+
+
+#heartbutton{
+  background-color:#eebbc3;
+  color: #232946;
+  border-radius: 8px;
+}
+
+#deletebutton{
+  background-color: #232946;
+  color: #fffffe;
+  border-radius: 8px;
+}
+
+moment {
+  color:#b84c2e;
+}
+
+.card-title {
+  font-size: 18px;
+  color:#232946;
+  padding: 1px;
+  background-color: #eebbc3;
+  border-radius: 12px;
+  display: flex;
   justify-content: center;
-  margin-top: 50px;
-}
-
-.Events {
-  box-shadow: 1px, gray;
-}
-
-h1 {
-  color: #00556e;
-  margin-bottom: 50px !important;
 }

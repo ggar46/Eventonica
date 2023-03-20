@@ -5,6 +5,7 @@ const cors = require('cors');
 const path = require('path');
 require('dotenv').config();
 const db = require('../server/db/db-connection.js'); 
+const { Pool } = require('pg');
 
 const app = express();
 const PORT = 8085;
@@ -48,6 +49,61 @@ app.get('/api/events', async (req, res) =>{
     // res.json(events);
 })
 
+// Create a route for the POST request
+app.post("/api/events", async (req, res) => {
+    //TO - DO - At the end => save this event to the db
+    //INSERT INTO events (title, location, eventtime) VALUES ('Women in Tech Techtonica Panel', 'Overland Park Convention Center', '2023-04-21')
+    try {
+        const newEvent = {
+            title: req.body.title,
+            location: req.body.location,
+            eventtime: req.body.eventtime
+        }
+        const result = await db.query('INSERT INTO events(title, location, eventtime) VALUES ($1, $2, $3) RETURNING *', [newEvent.title, newEvent.location, newEvent.eventtime]);
+        let response = result.rows[0];
+        console.log(response);
+        res.json(response)
+
+    } catch (e){
+        console.log(error);
+        return res.status(400).json({error});
+    }
+})
+
+
+//$ is part of the syntax, takes actual value of the id
+app.delete("/api/events/:id", async(req,res) => {
+    try{
+        const  {id}  = req.params;
+        const deleteEvent = await db.query("DELETE FROM events WHERE id= $1",  [
+           id 
+        ]);
+        res.json("Event was deleted")
+        //console.log("delete button is reaching backend")
+    } catch(err)  {
+        console.error(err.message);
+    }
+});
+
+
+//PUT REQUEST, in query we would have UPDATE command, in URL add /favorite/:id
+//if we want to update multiple fields, we would have a form thing with a data structure (json, with name/date/etc) to hold all info
+//here we are specifying needed fields in URL, in front-end we pass value with ? and id=...
+
+app.put("/api/events/:id", async(req,res) => {
+    try{
+        //console.log("PUT Request is working");
+        const  {id}  = req.params;
+        const {favorite} = req.body;
+        // console.log("Id", id);
+        // console.log("favorites", favorite);
+        // console.log(req.body);
+        const updateFavorites = await db.query("UPDATE events SET favorites= $1 WHERE id= $2",  [favorite,id]);
+        res.json("Event was updated");
+    } catch (err) {
+        console.error(err.message)
+    }
+});
 
 
 app.listen(PORT, () => console.log(`Hola! Server running on Port http://localhost:${PORT}`));
